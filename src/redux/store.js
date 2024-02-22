@@ -1,14 +1,16 @@
-import { configureStore } from '@reduxjs/toolkit';
-import foodReducer from './slices/foodSlice';
-import exerciseReducer from './slices/exerciseSlice';
-import profileReducer from './slices/profileSlice.js';
-import dayReducer from './slices/daySlice.js/index.js';
+import { configureStore } from "@reduxjs/toolkit";
+import dayReducer from "./slices/daySlice.tsx";
+import exerciseReducer from "./slices/exerciseSlice.tsx";
+import foodReducer from "./slices/foodSlice.tsx";
+import profileReducer from "./slices/profileSlice.tsx";
+import userReducer from "./slices/userSlice.tsx";
 
-export const store = configureStore({
+export default configureStore({
   reducer: {
+    user: userReducer,
+    profile: profileReducer,
     food: foodReducer,
     exercise: exerciseReducer,
-    profile: profileReducer,
     day: dayReducer,
   },
 });

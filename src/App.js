@@ -1,22 +1,26 @@
-import './App.css';
-// src/App.js
-import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import HomePage from './components/HomePage';
-import ProfilePage from './containers/ProfilePage';
-import LoginPage from './containers/LoginPage';
-import Switch from 'react';
+import { Route, Routes, useLocation } from "react-router-dom";
+import ChooseProfile from "./Pages/ChooseProfile.tsx";
+import Exercises from "./Pages/Exercises.tsx";
+import Food from "./Pages/Food.tsx";
+import Home from "./Pages/Home.tsx";
+import Login from "./Pages/Login.tsx";
+import Register from "./Pages/Register.tsx";
+
 
 function App() {
+
+
   return (
-    <Router>
-      <Switch>
-        <Route path="/" exact component={HomePage} />
-        <Route path="/profile" component={ProfilePage} />
-        <Route path="/login" component={LoginPage} />
-        {/* Add more routes as needed */}
-      </Switch>
-    </Router>
+    <Routes>
+    <Route path="/" element={<Home />} />
+    <Route path="home" element={<Home />} />
+    <Route path="home/exercises" element={<Exercises />} />
+    <Route path="home/food" element={<Food />} />
+    <Route path="register" element={<Register />} />
+    <Route path="login" element={<Login />} />
+    <Route path="chooseProfile" element={<ChooseProfile />} />
+    <Route path="*" element={<Home />} />
+  </Routes>
   );
 }
 
