@@ -9,6 +9,7 @@ import {
   selectCurrentProfile,
 } from "../redux/slices/profileSlice.tsx";
 import { logoutAsync } from "../redux/slices/userSlice.tsx";
+import React from "react";
 
 function getWindowSize() {
   const { innerWidth, innerHeight } = window;
@@ -37,7 +38,7 @@ function HomeHeader(props) {
     <div className="flex flex-col shadow-md bg-slate-200 sm:sticky sm:top-0 ">
       <div className="flex p-5 justify-between">
         <button onClick={() => navigate("/home")}>
-          <h1>{windowSize.innerWidth <= 640 ? "MFT" : "My Fitness Thomas"}</h1>
+          <h1>{windowSize.innerWidth <= 640 ? "MFT" : "Radu Fit"}</h1>
         </button>
 
         {profile && !props.isEditing && (

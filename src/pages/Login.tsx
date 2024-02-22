@@ -1,3 +1,4 @@
+import React from 'react';
 import { useEffect, useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
@@ -41,7 +42,7 @@ function Login() {
         <div className="flex flex-col gap-y-3 p-10 mb-10 sm:mb-6 sm:w-1/2 sm:mr-3 justify-center rounded-lg shadow-2xl ">
           <div className="mb-6 mx-6 mt-5 ">
             <h2 className=" text-center ">
-              Logge dich mit deiner Email und deinem Passwort ein.
+              Email und Passwort eingeben, um dich einzuloggen.
             </h2>
           </div>
 

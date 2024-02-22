@@ -8,6 +8,7 @@ import RegisterImg from "../components/RegisterImg.tsx";
 import { loginAsync } from "../redux/slices/userSlice.tsx";
 import authService from "../services/auth.tsx";
 import { motion } from "framer-motion";
+import React from "react";
 
 function Register() {
   const dispatch = useDispatch();

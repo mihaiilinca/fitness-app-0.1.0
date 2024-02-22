@@ -8,7 +8,7 @@ function InputElement(props) {
       </div>
       <div>
         <input
-          className={`bg-slate-200 rounded-md  ${
+          className={`bg-blue-200 rounded-md  ${
             props.width ? props.width : "min-w-full"
           }  h-9 px-2`}
           type={props.type && props.type}
