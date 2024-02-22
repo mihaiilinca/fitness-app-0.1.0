@@ -5,6 +5,7 @@ import foodReducer from "./slices/foodSlice.tsx";
 import profileReducer from "./slices/profileSlice.tsx";
 import userReducer from "./slices/userSlice.tsx";
 
+
 export default configureStore({
   reducer: {
     user: userReducer,

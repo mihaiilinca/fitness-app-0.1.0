@@ -5,7 +5,7 @@ const fetchExercises = () => {
   return axios
     .get(`${ENDPOINT}/fitness/exercises`, {})
     .then((response) => response.data)
-    .catch((error) => console.log(erro));
+    .catch((error) => console.log(error));
 };
 
 const addExercise = (cookie, data) => {

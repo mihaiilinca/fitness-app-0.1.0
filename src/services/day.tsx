@@ -9,7 +9,7 @@ const fetchDays = (profileId, cookie) => {
       },
     })
     .then((response) => response.data)
-    .catch((error) => console.log(erro));
+    .catch((error) => console.log(error));
 };
 
 const addDay = (cookie, data) => {

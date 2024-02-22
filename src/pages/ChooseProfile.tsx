@@ -15,6 +15,7 @@ import {
   selectUser,
 } from "../redux/slices/userSlice.tsx";
 import { motion } from "framer-motion";
+import React from "react";
 
 function ChooseProfile() {
   const dispatch = useDispatch();
