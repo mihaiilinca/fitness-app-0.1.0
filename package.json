@@ -24,10 +24,13 @@
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
+    "parser": "babel-eslint",
     "extends": [
       "react-app",
-      "react-app/jest"
-    ]
+      "react-app/jest",
+      "plugin:jest/recommended"
+    ],
+    "plugins": ["@babel/plugin-proposal-optional-chaining"]
   },
   "browserslist": {
     "production": [
@@ -42,6 +45,8 @@
     ]
   },
   "devDependencies": {
-    "@babel/preset-typescript": "^7.23.3"
+    "@babel/plugin-proposal-optional-chaining": "^7.21.0",
+    "babel-eslint": "^10.1.0",
+    "eslint-plugin-jest": "^27.9.0"
   }
 }
