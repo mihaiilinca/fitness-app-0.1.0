@@ -13,6 +13,7 @@ import { CalendarPersonalData } from "./../components/CalendarPersonalData.tsx";
 import { motion } from "framer-motion";
 import AddElementToDayPopup from "../components/AddElementToDayPopup.tsx";
 import DayElementEditPopup from "../components/DayElementPopup.tsx";
+import React from "react";
 
 function Home() {
   const dispatch = useDispatch();

@@ -5,6 +5,7 @@ import {
 } from "../redux/slices/exerciseSlice.tsx";
 import { selectCookie } from "../redux/slices/userSlice.tsx";
 import exerciseService from "../services/exercises.tsx";
+import React from "react";
 
 function Exercise(props) {
   const dispatch = useDispatch();

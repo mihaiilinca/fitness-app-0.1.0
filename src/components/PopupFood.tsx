@@ -10,6 +10,7 @@ import { selectCookie } from "../redux/slices/userSlice.tsx";
 import foodService from "../services/food.tsx";
 import InputElement from "./InputElement.tsx";
 import { motion } from "framer-motion";
+import React from "react";
 
 function PopupFood(props) {
   const dispatch = useDispatch();

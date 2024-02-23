@@ -9,6 +9,7 @@ import { selectCookie } from "../redux/slices/userSlice.tsx";
 import dayService from "../services/day.tsx";
 import InputElement from "./InputElement.tsx";
 import { motion } from "framer-motion";
+import React from "react";
 
 function AddElementToDayPopup(props) {
   const dispatch = useDispatch();

@@ -8,6 +8,7 @@ import PopupExercise from "../components/PopupExercise.tsx";
 import { selectExercises } from "../redux/slices/exerciseSlice.tsx";
 import { selectIsLoggedIn } from "../redux/slices/userSlice.tsx";
 import { motion } from "framer-motion";
+import React from "react";
 
 function Exercises() {
   const exercises = useSelector(selectExercises);

@@ -7,6 +7,7 @@ import { selectCurrentProfile } from "../redux/slices/profileSlice.tsx";
 import { selectCookie } from "../redux/slices/userSlice.tsx";
 import dayService from "../services/day.tsx";
 import { motion } from "framer-motion";
+import React from "react";
 
 function DayElementEditPopup(props) {
   const cookie = useSelector(selectCookie);

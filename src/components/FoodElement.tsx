@@ -2,6 +2,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { changeFood, fetchFood } from "../redux/slices/foodSlice.tsx";
 import { selectCookie } from "../redux/slices/userSlice.tsx";
 import foodService from "../services/food.tsx";
+import React from "react";
 
 function FoodElement(props) {
   const dispatch = useDispatch();

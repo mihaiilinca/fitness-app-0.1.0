@@ -8,6 +8,7 @@ import PopupFood from "../components/PopupFood.tsx";
 import { selectFood } from "../redux/slices/foodSlice.tsx";
 import { selectIsLoggedIn } from "../redux/slices/userSlice.tsx";
 import { motion } from "framer-motion";
+import React from "react";
 
 function Food() {
   const food = useSelector(selectFood);

@@ -9,6 +9,7 @@ import { selectCookie, selectUser } from "../redux/slices/userSlice.tsx";
 import profileService from "../services/profiles.tsx";
 import InputElement from "./InputElement.tsx";
 import { motion } from "framer-motion";
+import React from "react";
 
 function PopupProfile(props) {
   const dispatch = useDispatch();

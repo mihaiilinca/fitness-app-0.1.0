@@ -14,6 +14,7 @@ import { selectCurrentProfile } from "../redux/slices/profileSlice.tsx";
 import { selectCookie } from "../redux/slices/userSlice.tsx";
 import dayService from "../services/day.tsx";
 import { AddDayHint } from "./../components/AddDayHint.tsx";
+import React from "react";
 
 export function FoodAndExercises({
   setShowPopupEditLabel,

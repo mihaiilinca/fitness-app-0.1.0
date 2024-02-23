@@ -1,9 +1,10 @@
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import { changeDay } from "../redux/slices/daySlice.tsx";
+import { changeDay, fetchDays } from "../redux/slices/daySlice.tsx";
 import { changeProfile, fetchProfiles } from "../redux/slices/profileSlice.tsx";
 import { selectCookie, selectUser } from "../redux/slices/userSlice.tsx";
 import profileService from "../services/profiles.tsx";
+import React from "react";
 
 function Profile(props) {
   let navigate = useNavigate();

@@ -4,6 +4,7 @@ import { fetchDays, selectSelectedDate } from "../redux/slices/daySlice.tsx";
 import { selectCurrentProfile } from "../redux/slices/profileSlice.tsx";
 import { selectCookie } from "../redux/slices/userSlice.tsx";
 import dayService from "../services/day.tsx";
+import React from "react";
 
 export function AddDayHint() {
   const dispatch = useDispatch();

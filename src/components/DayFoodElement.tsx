@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchDays, selectCurrentDay } from "../redux/slices/daySlice.tsx";
 import dayService from "../services/day.tsx";
+import React from "react";
 
 function DayFoodElement(props) {
   const dispatch = useDispatch();
