@@ -17,7 +17,7 @@ function Header(props) {
         <div className="invisible sm:visible">
           {props.isLogoutPage
             ? "Wir sehen uns bald wieder"
-            : "Noch keinen Account? Jetzt"}
+            : "Noch keinen Account?"}
         </div>
         <button
           className="flex justify-between mx-3 sm:pl-3 transition transform hover:scale-110 bg-white rounded-lg py-2 px-2"
